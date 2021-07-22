@@ -72,7 +72,7 @@ function checkpw(){
 <div class="create">
 <h2 align="center" class="re">Create an Account</h2>
 <hr color="black">
-<form  onsubmit="return checkpw()" autocomplete="off" method="POST">
+<form  onsubmit="return checkpw()" action="mm.html" autocomplete="off" method="POST">
 <font size="5" >&nbsp Username :</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <i class="fa fa-user" aria-hidden="true"></i><input type="text" placeholder="Enter username" id="us" name="username" required>
 <br>
@@ -117,7 +117,7 @@ $query="insert into student values('$un','$pw','$em','$gn','$datob')";
 $data=mysqli_query($conn,$query);
 
 if($data){
-	echo "<script>window.open('mm.html');</script>";
+	//echo "<script>window.open('mm.html');</script>";
 	
 	
 }
